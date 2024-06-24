@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Player Attributes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff91;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background: #4c9df9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        input[type="number"] {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #561a84;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Player Attributes Form</h1>
+    <form action="/" method="post">
+        <label for="movement_reactions">Movement Reactions:</label>
+        <input type="number" id="movement_reactions" name="movement_reactions" min="0" step="1" required>
+
+        <label for="mentality_composure">Mentality Composure:</label>
+        <input type="number" id="mentality_composure" name="mentality_composure" min="0" step="1" required>
+
+        <label for="passing">Passing:</label>
+        <input type="number" id="passing" name="passing" min="0" step="1" required>
+
+        <label for="release_clause_eur">Release Clause (in Euros):</label>
+        <input type="number" id="release_clause_eur" name="release_clause_eur" min="0" step="1" required>
+
+        <label for="dribbling">Dribbling:</label>
+        <input type="number" id="dribbling" name="dribbling" min="0" step="1" required>
+
+        <!-- Attributes related to 'wage_eur' -->
+        <label for="wage_eur">Wage (in Euros):</label>
+        <input type="number" id="wage_eur" name="wage_eur" min="0" step="1" required>
+
+        <!-- Attributes related to 'power_shot_power' -->
+        <label for="power_shot_power">Power Shot Power:</label>
+        <input type="number" id="power_shot_power" name="power_shot_power" min="0" step="1" required>
+
+        <!-- Attributes related to 'value_eur' -->
+        <label for="value_eur">Value (in Euros):</label>
+        <input type="number" id="value_eur" name="value_eur" min="0" step="1" required>
+
+        <!-- Attributes related to 'mentality_vision' -->
+        <label for="mentality_vision">Mentality Vision:</label>
+        <input type="number" id="mentality_vision" name="mentality_vision" min="0" step="1" required>
+
+        <!-- Attributes related to 'attacking_short_passing' -->
+        <label for="attacking_short_passing">Attacking Short Passing:</label>
+        <input type="number" id="attacking_short_passing" name="attacking_short_passing" min="0" step="1" required>
+
+        <!-- Attributes related to 'physic' -->
+        <label for="physic">Physic:</label>
+        <input type="number" id="physic" name="physic" min="0" step="1" required>
+
+        <!-- Attributes related to 'skill_long_passing' -->
+        <label for="skill_long_passing">Skill Long Passing:</label>
+        <input type="number" id="skill_long_passing" name="skill_long_passing" min="0" step="1" required>
+
+        <!-- Attributes related to 'age' -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0" step="1" required>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+
+</html>
